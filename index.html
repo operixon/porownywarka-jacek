@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<div>
+	<div class="Image">
+		<img id="i1"  src="1.gif" alt="Image 1" width="104" height="142">
+	</div>
+	<div  class="Image">
+		<img id="i2" src="1.gif" alt="Image 2" width="104" height="142">
+	</div>
+</div>
+
+  <select id="list1" class="target">
+    <option value="1.gif">1</option>
+    <option value="2.gif">2</option>
+		<option value="3.gif">3</option>
+  </select>
+
+	<select id="list2" class="target">
+    <option value="1.gif">1</option>
+    <option value="2.gif">2</option>
+		<option value="3.gif">3</option>
+  </select>
+
+
+<script>
+	$( "#list1" ).change(function() {
+		$("#i1").attr("src",$(this).val());
+	});
+	$( "#list2" ).change(function() {
+		$("#i2").attr("src",$(this).val());
+	});
+</script>
+
+</body>
+</html>
